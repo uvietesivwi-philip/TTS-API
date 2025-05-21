@@ -300,9 +300,3 @@ def longtts():
         logging.error(f"Error during synthesis: {str(e)}")
         return error_response("Failed to synthesize audio", 500)
 
-
-def main():
-    app.run(debug=True, host="::", port=5050)
-
-if __name__ == "__main__":
-    main()
