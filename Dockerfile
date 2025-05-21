@@ -31,4 +31,4 @@ ENV PYTHONUNBUFFERED=1
 ENV PORT=5050
 
 # :large_green_circle: Start the server with gunicorn using Render's port
-CMD ["gunicorn", "server:app", "--bind", "0.0.0.0:$PORT"]
+CMD ["python", "server.py"]
